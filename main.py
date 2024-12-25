@@ -38,6 +38,11 @@ async def read_root(file: Annotated[bytes, File()]): # file: UploadFile = File(.
     await asyncio.sleep(2)
     return JSONResponse(content={"size": feetSize})
 
+@app.get("/hello")
+async def get_hello():
+    return JSONResponse(content={"message": "hello"})
+
+
 def getSize(input_image):
 
     # oimg = imread(ImgPath)
