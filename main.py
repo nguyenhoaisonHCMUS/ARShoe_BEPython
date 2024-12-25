@@ -1,16 +1,9 @@
 import asyncio
 from typing import Annotated
 from fastapi.responses import JSONResponse
-from sklearn.cluster import KMeans
-import random as rng
 import cv2
-import imutils
-import argparse
-from imutils import contours
 # from skimage.io import imread => replace to imageio.v3
 import imageio.v3 as iio
-import numpy as np
-import matplotlib.pyplot as plt
 import os
 
 from utils import *
